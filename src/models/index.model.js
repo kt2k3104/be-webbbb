@@ -4,6 +4,7 @@ import { Sequelize, DataTypes } from "sequelize";
 
 import gameModel from "./game.model.js";
 import reviewModel from "./review.model.js";
+import contentModel from "./content.model.js";
 
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   host: dbConfig.HOST,
@@ -37,6 +38,7 @@ const db = {
 
 db.Game = gameModel(sequelize, DataTypes);
 db.Review = reviewModel(sequelize, DataTypes);
+db.Content = contentModel(sequelize, DataTypes);
 
 const createOneToManyRelation = function (manyModel, oneModel, foreignKey, as) {
   oneModel.hasMany(manyModel, {

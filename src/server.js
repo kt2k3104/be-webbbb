@@ -13,6 +13,7 @@ import cors from "cors";
 import uploadRouter from "./routes/upload.route";
 import gameRouter from "./routes/game.route";
 import reviewRouter from "./routes/review.route";
+import contentRouter from "./routes/content.route";
 
 const app = express();
 
@@ -58,6 +59,7 @@ app.use(function (req, res, next) {
 app.use("/upload", uploadRouter);
 app.use("/games", gameRouter);
 app.use("/reviews", reviewRouter);
+app.use("/contents", contentRouter);
 
 app.use((error, req, res, next) => {
   const status = error.statusCode || 500;
