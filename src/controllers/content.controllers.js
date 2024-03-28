@@ -137,7 +137,7 @@ const contentController = {
       next(error);
     }
   },
-  getAllContentPage2: async (req, res, next) => {
+  getAllContentPage3: async (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       const err = new Error("Validation failed, entered data is incorrect.");
@@ -160,7 +160,7 @@ const contentController = {
       next(error);
     }
   },
-  getAllContentPage2: async (req, res, next) => {
+  getAllContentPage4: async (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       const err = new Error("Validation failed, entered data is incorrect.");
@@ -183,7 +183,7 @@ const contentController = {
       next(error);
     }
   },
-  getAllContentPage2: async (req, res, next) => {
+  getAllContentPage5: async (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       const err = new Error("Validation failed, entered data is incorrect.");
@@ -206,7 +206,7 @@ const contentController = {
       next(error);
     }
   },
-  getAllContentPage2: async (req, res, next) => {
+  getAllContentPage6: async (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       const err = new Error("Validation failed, entered data is incorrect.");
@@ -229,7 +229,7 @@ const contentController = {
       next(error);
     }
   },
-  getAllContentPage2: async (req, res, next) => {
+  getAllContentPage7: async (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       const err = new Error("Validation failed, entered data is incorrect.");
